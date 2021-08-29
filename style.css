@@ -1,3 +1,4 @@
+
 main {
     font-family: sans-serif;
     font-size: 15px;
@@ -6,3 +7,42 @@ main {
 li {
     margin: 10px;
 }
+
+
+/* Mobiles */
+  @media screen and (max-width: 480px) {
+    main{
+      background-color: white;
+      color: black;
+      margin: 20px;
+      font-size: 19px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+  }
+
+  /*Tablets, Ipads*/ 
+  @media screen and (min-width: 480px) and (max-width: 1024px) {
+    main {
+      background-color: white;
+      color: purple;
+      margin: 30px;
+      font-size: 25px;
+      padding: 15px;
+    }
+  }
+
+  /*Laptops, Desktops*/ 
+  @media screen and (min-width: 1024px) {
+    body,main{
+      background-color: rgb(219, 219, 13);
+      color: rgb(120, 58, 151);
+      margin: 20px;
+      font-size: 40px;
+      padding: 12px;
+    }
+    li::first-letter {
+      font-size: 150%;
+    }
+  }
+
